@@ -1,0 +1,51 @@
+<div class="container" style="max-width: 800px; margin: 40px auto; border: 2px solid black; border-radius: 8px; background-color: #fdf5e6; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); overflow: hidden;">
+  <div class="modal-header" style="background: linear-gradient(120deg, rgba(28,28,28,0.5) 0%, rgba(28,28,28,0.5) 25%, rgba(34,139,34,0.5) 40%, rgba(255,0,0,0.5) 60%, rgba(255,255,0,0.5) 80%);
+      color: white; padding: 15px; text-align: center; border-radius: 8px 8px 0 0; animation: gradientAnimation 10s ease infinite; background-size: 300% 300%; position: relative;">
+    <span class="close-button" onclick="closeModal()" style="position: absolute; right: 15px; top: 10px; font-size: 24px; font-weight: bold; color: white; cursor: pointer;">&times;</span>
+    <h2>FUNDAÇÃO</h2>
+  </div>
+  <div class="modal-body" style="padding: 20px; text-align: center; line-height: 1.6;">
+    <p>Em breve</p>
+  </div>
+</div>
+
+<style>
+  @keyframes gradientAnimation {
+    0%, 100% {
+      background: linear-gradient(120deg,
+        rgba(28, 28, 28, 0.5) 0%,
+        rgba(28, 28, 28, 0.5) 25%,
+        rgba(34, 139, 34, 0.5) 40%,
+        rgba(255, 0, 0, 0.5) 60%,
+        rgba(255, 255, 0, 0.5) 80%
+      );
+    }
+    25% {
+      background: linear-gradient(120deg,
+        rgba(34, 139, 34, 0.5) 0%,
+        rgba(255, 255, 0, 0.5) 20%,
+        rgba(28, 28, 28, 0.5) 40%,
+        rgba(28, 28, 28, 0.5) 60%,
+        rgba(255, 0, 0, 0.5) 80%
+      );
+    }
+    50% {
+      background: linear-gradient(120deg,
+        rgba(255, 255, 0, 0.5) 0%,
+        rgba(28, 28, 28, 0.5) 20%,
+        rgba(28, 28, 28, 0.5) 40%,
+        rgba(34, 139, 34, 0.5) 60%,
+        rgba(255, 0, 0, 0.5) 80%
+      );
+    }
+    75% {
+      background: linear-gradient(120deg,
+        rgba(34, 139, 34, 0.5) 0%,
+        rgba(255, 0, 0, 0.5) 20%,
+        rgba(255, 255, 0, 0.5) 40%,
+        rgba(28, 28, 28, 0.5) 60%,
+        rgba(28, 28, 28, 0.5) 80%
+      );
+    }
+  }
+</style>
